@@ -1,0 +1,35 @@
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  text-align: center;
+  background-color: var(--background-start-rgb);
+  color: var(--foreground-rgb);
+}
+
+.title {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.description {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.link {
+  font-size: 1.2rem;
+  color: var(--foreground-rgb);
+  text-decoration: none;
+  border: 1px solid var(--foreground-rgb);
+  padding: 0.5rem 1rem;
+  border-radius: var(--border-radius);
+}
+
+.link:hover {
+  background-color: var(--foreground-rgb);
+  color: var(--background-start-rgb);
+}

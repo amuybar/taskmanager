@@ -1,0 +1,170 @@
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background-color: var(--background-start-rgb);
+  color: var(--foreground-rgb);
+  border-bottom: 1px solid var(--border-color);
+  box-shadow: var(--box-shadow);
+  font-size: 1.2rem;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--foreground-rgb);
+}
+
+.links {
+  display: flex;
+  align-items: center;
+}
+
+.links a {
+  margin: 0 1rem;
+  text-decoration: none;
+  color: inherit;
+  font-weight: bold;
+  font-size: 1.2rem;
+  transition: all 0.2s ease-in-out;
+}
+
+.links a:hover {
+  color: var(--hover-color);
+  border-bottom: 2px solid var(--hover-color);
+}
+
+
+.auth {
+  display: flex;
+  align-items: center;
+}
+
+.themeSelector {
+  position: relative;
+  width: 160px;
+  margin-left: 1rem;
+  background-color: var(--background-color);
+}
+
+.themeSelector select {
+  width: 100%;
+  padding: 0.5rem;
+  font-size: 1rem;
+  border: 1px solid var(--border-color);
+  background-color: var(--background-color);
+  color: var(--text-color);
+  appearance: none;
+  cursor: pointer;
+  border-radius: var(--border-radius);
+  outline: none;
+}
+
+.themeSelector option {
+  color: var(--text-color);
+  background-color: var(--background-color);
+}
+
+.themeSelector select:focus {
+  box-shadow: 0 0 0 2px var(--focus-color);
+}
+
+
+.themeSelector::after {
+  content: '';
+  position: absolute;
+  top: calc(50% - 3px);
+  right: 8px;
+  width: 0;
+  height: 0;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-top: 6px solid var(--arrow-color);
+  pointer-events: none;
+  
+}
+
+
+.themeSelector:hover select {
+  background-color: var(--background-hover-color);
+}
+
+.themeSelector select:active,
+.themeSelector select:focus {
+  background-color: var(--background-active-color);
+}
+
+.menu {
+  display: none;
+}
+
+.menuToggle {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 21px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  margin-left: 1rem;
+}
+
+.menuToggle span {
+  display: block;
+  width: 100%;
+  height: 3px;
+  background-color: var(--span-color);
+}
+
+.show {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (max-width: 768px) {
+  
+  .links {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+
+  .links a {
+    margin: 0.5rem 0;
+    text-align: center;
+  }
+
+  .auth {
+    margin-top: 1rem;
+  }
+
+  .themeSelector {
+    margin-left: 0;
+    margin-top: 1rem;
+    width: auto;
+  }
+
+  .menu {
+    display: block;
+  }
+
+  .menuToggle {
+    display: flex;
+  }
+
+  .menuToggle span {
+    display: block;
+    width: 100%;
+    height: 3px;
+    background-color: var(--span-color);
+    margin: 2px 0;
+  }
+
+  .show {
+    display: flex;
+  }
+}

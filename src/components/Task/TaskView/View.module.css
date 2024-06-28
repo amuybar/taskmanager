@@ -1,0 +1,73 @@
+/* View.module.css */
+.taskContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.taskItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  border: 1px solid var(--border-color);
+  border-radius: var(--border-radius);
+  background-color: rgb(var(--background-start-rgb));
+  transition: all 0.3s ease;
+}
+
+.taskItem.completed {
+  opacity: 0.6;
+}
+
+.taskContent {
+  flex-grow: 1;
+}
+
+.taskName {
+  font-size: 18px;
+  color: var(--text-color);
+  margin-bottom: 5px;
+}
+
+.taskStatus {
+  font-size: 14px;
+  color: var(--span-color);
+}
+
+.taskActions {
+  display: flex;
+  gap: 10px;
+}
+
+.actionButton {
+  padding: 8px 12px;
+  border: none;
+  border-radius: calc(var(--border-radius) / 2);
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.toggleButton {
+  background-color: var(--hover-color);
+  color: var(--text-color);
+}
+
+.toggleButton:hover {
+  background-color: var(--active-color);
+}
+
+.deleteButton {
+  background-color: var(--error-color, #ff4136);
+  color: white;
+}
+
+.deleteButton:hover {
+  background-color: var(--error-hover-color, #ff7266);
+}
+
+.noTasks {
+  text-align: center;
+  color: var(--text-color);
+  font-style: italic;
+}

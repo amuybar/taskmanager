@@ -1,0 +1,6 @@
+{
+  "databaseURL": "https://Barrack-Amuyunzu-s-workspace-bq01mc.eu-west-1.xata.sh/db/task-manager",
+  "codegen": {
+    "output": "src/xata.ts"
+  }
+}

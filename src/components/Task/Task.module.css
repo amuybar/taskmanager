@@ -1,0 +1,39 @@
+/* Task.module.css */
+.container {
+  margin: 20px auto;
+  padding: 20px;
+  border: 1px solid var(--border-color);
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow);
+  background-color: rgb(var(--background-end-rgb));
+}
+
+.tabs {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+
+.container button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: var(--border-radius);
+  background-color: var(--tile-border);
+  color: var(--text-color);
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.container button:hover {
+  background-color: var(--active-color);
+}
+
+.activeTab {
+  background-color: var(--active-color);
+}
+
+.tabContent {
+  padding: 20px;
+  border-top: 1px solid var(--border-color);
+}

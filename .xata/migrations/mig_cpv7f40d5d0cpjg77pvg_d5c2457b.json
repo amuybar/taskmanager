@@ -1,0 +1,11 @@
+{
+  "id": "mig_cpv7f40d5d0cpjg77pvg",
+  "checksum": "1:d5c2457bd8391bcac0c909c1db7a22d4ce2c01b0f1798769ce6bcd3b19f2d799",
+  "operations": [
+    {
+      "addTable": {
+        "table": "Tasks"
+      }
+    }
+  ]
+}

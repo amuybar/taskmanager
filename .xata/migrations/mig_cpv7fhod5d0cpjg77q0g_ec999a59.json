@@ -1,0 +1,18 @@
+{
+  "id": "mig_cpv7fhod5d0cpjg77q0g",
+  "parentID": "mig_cpv7fckff1j6cqu0tomg",
+  "checksum": "1:ec999a5974f608466f37e53419676d1b2ccae017ec376ca0e4a9fa0ec3b9600a",
+  "operations": [
+    {
+      "addColumn": {
+        "column": {
+          "name": "status",
+          "type": "bool",
+          "notNull": true,
+          "defaultValue": "false"
+        },
+        "table": "Tasks"
+      }
+    }
+  ]
+}

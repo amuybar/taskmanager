@@ -36,58 +36,71 @@ Before you begin, ensure you have met the following requirements:
 ```
 
 2. Install dependencies:
+```
 npm install
-Copyor
+```
+or
+```
 yarn install
-Copy
+```
+
 3. Set up environment variables:
 Create a `.env.local` file in the root directory and add the following:
+```
 NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY=your_clerk_publishable_key
+
 CLERK_SECRET_KEY=your_clerk_secret_key
+
 XATA_API_KEY=your_xata_api_key
+
 XATA_DATABASE_URL=your_xata_database_url
-Copy
+
+```
 ## Running the Application
 
 To run the application in development mode:
+```
 npm run dev
-Copyor
+```
+or
+```
 yarn dev
-Copy
+```
+
 The application will be available at `http://localhost:3000`.
 
 ## Project Structure
-task-manager/
-├── actions/
-│   ├── AddTask.ts
-│   └── TaskActions.ts
-├── components/
-│   ├── Nav/
-│   ├── Task/
-│   │   ├── Task.tsx
-│   │   ├── TaskForm.tsx
-│   │   └── TaskView.tsx
-│   └── ...
-├── pages/
-│   ├── api/
-│   ├── _app.tsx
-│   └── index.tsx
-├── styles/
-│   └── globals.css
-├── xata/
-│   └── index.ts
-├── .env.local
-├── next.config.js
-├── package.json
-└── tsconfig.json
-Copy
+task-manager/ \n
+├── actions/\n
+│   ├── AddTask.ts\n
+│   └── TaskActions.ts\n
+├── components/\n
+│   ├── Nav/\n
+│   ├── Task/\n
+│   │   ├── Task.tsx\n
+│   │   ├── TaskForm.tsx\n
+│   │   └── TaskView.tsx\n
+│   └── ...\n
+├── pages/\n
+│   ├── api/\n
+│   ├── _app.tsx\n
+│   └── index.tsx\n
+├── styles/\n
+│   └── globals.css\n
+├── xata/\n
+│   └── index.ts\n
+├── .env.local\n
+├── next.config.js\n
+├── package.json\n
+└── tsconfig.json\n
+
 ## Deployment
 
 This application can be deployed on platforms like Vercel or Netlify. Make sure to set up the environment variables in your deployment platform's settings.
 
 ## Contributing
 
-Contributions, issues, and feature requests are welcome. Feel free to check [issues page](https://github.com/yourusername/task-manager/issues) if you want to contribute.
+Contributions, issues, and feature requests are welcome. Feel free to check [issues page](https://github.com/amuybar) if you want to contribute.
 
 ## License
 

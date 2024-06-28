@@ -70,29 +70,31 @@ yarn dev
 The application will be available at `http://localhost:3000`.
 
 ## Project Structure
-task-manager/ \n
-├── actions/\n
-│   ├── AddTask.ts\n
-│   └── TaskActions.ts\n
-├── components/\n
-│   ├── Nav/\n
-│   ├── Task/\n
-│   │   ├── Task.tsx\n
-│   │   ├── TaskForm.tsx\n
-│   │   └── TaskView.tsx\n
-│   └── ...\n
-├── pages/\n
-│   ├── api/\n
-│   ├── _app.tsx\n
-│   └── index.tsx\n
-├── styles/\n
-│   └── globals.css\n
-├── xata/\n
-│   └── index.ts\n
-├── .env.local\n
-├── next.config.js\n
-├── package.json\n
-└── tsconfig.json\n
+
+task-manager/  
+├── actions/  
+│   ├── AddTask.ts  
+│   └── TaskActions.ts  
+├── components/  
+│   ├── Nav/  
+│   ├── Task/  
+│   │   ├── Task.tsx  
+│   │   ├── TaskForm.tsx  
+│   │   └── TaskView.tsx  
+│   └── ...  
+├── pages/  
+│   ├── api/  
+│   ├── _app.tsx  
+│   └── index.tsx  
+├── styles/  
+│   └── globals.css  
+├── xata/  
+│   └── index.ts  
+├── .env.local  
+├── next.config.js  
+├── package.json  
+└── tsconfig.json  
+
 
 ## Deployment
 
